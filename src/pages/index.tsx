@@ -1,16 +1,8 @@
-import  Header from './component/Header'
-import Stats from './component/Stats'
-import Features from './component/Feature'
-import Footer from './component/Footer'
-
+import HomePage from "./component/HomePage/HomePage";
 export default function Home() {
   return (
     <main>
-   <Header/>
-   <Stats/>
-   <Features/>
-   <Footer/>
-
+      <HomePage />
     </main>
-  )
+  );
 }
