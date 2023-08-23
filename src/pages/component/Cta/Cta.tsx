@@ -7,7 +7,7 @@ export default function Cta() {
             Call To Action Header Call To Action Header 
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-           Call To Action Description Call To Action Description Call To Action Description Call To Action Description Call To Action Description Call To Action Description Call To Action
+           Call To Action Description Call To Action Description Call To Action Description Call To Action Description Call To Action Description Call To Action Description Call To Action Call to action
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
