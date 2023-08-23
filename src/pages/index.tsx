@@ -19,13 +19,22 @@ export async function getServerSideProps() {
         },
       };
   }else{
-    const WebName=NameKey.Name;
-    const response=await fetch(`http://localhost:4000/ftests/${WebName}`);
-    const responseData=await response.json();
-    return {
+    try {
+      const WebName=NameKey.Name;
+      const response=await fetch(`https://ftest-api.onrender.com/ftests/${WebName}`);
+      const responseData=await response.json();
+      return {
+          props: {
+            data:responseData,
+          },
+        };
+    } catch (error) {
+      console.log('Error ',error)
+      return {
         props: {
-          data:responseData,
+          data:Data,
         },
       };
+    }
   }
 }
