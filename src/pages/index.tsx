@@ -1,4 +1,4 @@
-import HomePage from "./component/HomePage/HomePage";
+import HomePage from "../component/HomePage/HomePage";
 import Data from "../../template.json";
 import NameKey from "../../data.json";
 
@@ -11,7 +11,7 @@ export default function Home({data}:any) {
 }
 
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   if(NameKey.Name==""){
     return {
         props: {

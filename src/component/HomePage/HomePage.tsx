@@ -8,6 +8,7 @@ import Cta from "../Cta/Cta";
 interface HomePageProps {
   WebContent: any[]; 
 }
+
 const HomePage: React.FC<HomePageProps> = ({ WebContent }) => {
   return (
     <>
