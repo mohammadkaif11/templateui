@@ -11,7 +11,7 @@ export default function Home({data}:any) {
 }
 
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   if(NameKey.Name==""){
     return {
         props: {
