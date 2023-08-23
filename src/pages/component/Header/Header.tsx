@@ -13,7 +13,6 @@ interface HeaderProps {
 
 
 const Header: React.FC<HeaderProps> = ({ Name,HeaderContent,HeaderDescription ,labels}) => {
-  const [navigation,setNavigation] = useState(labels)
   
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -40,9 +39,9 @@ const Header: React.FC<HeaderProps> = ({ Name,HeaderContent,HeaderDescription ,l
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
-            {navigation.map((item) => (
+            {labels.map((item,index) => (
               <a
-                key={item.Label}
+                key={index}
                 href={item.Label}
                 className="text-sm font-semibold leading-6 text-gray-900"
               >
@@ -88,9 +87,9 @@ const Header: React.FC<HeaderProps> = ({ Name,HeaderContent,HeaderDescription ,l
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
+                  {labels.map((item,index) => (
                     <a
-                      key={item.Label}
+                      key={index}
                       href={item.Label}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >

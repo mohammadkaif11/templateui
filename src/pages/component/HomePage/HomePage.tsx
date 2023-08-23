@@ -13,9 +13,9 @@ const HomePage: React.FC<HomePageProps> = ({ WebContent }) => {
     <>
       <Header Name={WebContent[0].Name} HeaderContent={WebContent[0].HeaderContent} HeaderDescription={WebContent[0].HeaderDescription} labels={WebContent[0].labels}/>
       <Stats stats={WebContent[0].stats}/> 
-      <Features />
+      <Features  feature={WebContent[0].feature}/>
       <Cta cta={WebContent[0].cta}/>
-      <Footer />
+      <Footer Name={WebContent[0].Name}/>
     </>
   );
 }
