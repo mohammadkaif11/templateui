@@ -5,16 +5,20 @@ import Features from "../Feature/Feature";
 import Footer from "../Footer/Footer";
 import Cta from "../Cta/Cta";
 
-function HomePage() {
+interface HomePageProps {
+  WebContent: any[]; 
+}
+const HomePage: React.FC<HomePageProps> = ({ WebContent }) => {
   return (
     <>
-      <Header />
-      <Stats /> 
-      <Features />
+      <Header Name={WebContent[0].Name} HeaderContent={WebContent[0].HeaderContent} HeaderDescription={WebContent[0].HeaderDescription} labels={WebContent[0].labels}/>
+      <Stats stats={WebContent[0].stats}/> 
+      <Features/>
       <Cta/>
       <Footer />
     </>
   );
 }
+
 
 export default HomePage;
