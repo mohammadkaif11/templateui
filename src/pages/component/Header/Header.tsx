@@ -2,14 +2,19 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-const navigation = [
-  { name: "Label 1", href: "#" },
-  { name: "Label 2", href: "#" },
-  { name: "Label 3", href: "#" },
-  { name: "Label 4", href: "#" },
-];
 
-export default function Header() {
+
+interface HeaderProps {
+  Name: string;
+  HeaderContent:string;
+  HeaderDescription:string
+  labels:any[];
+}
+
+
+const Header: React.FC<HeaderProps> = ({ Name,HeaderContent,HeaderDescription ,labels}) => {
+  const [navigation,setNavigation] = useState(labels)
+  
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -21,7 +26,7 @@ export default function Header() {
         >
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="text-3xl font-bold text-indigo-600">Name.</span>
+              <span className="text-3xl font-bold text-indigo-600">{Name}</span>
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -37,11 +42,11 @@ export default function Header() {
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
               <a
-                key={item.name}
-                href={item.href}
+                key={item.Label}
+                href={item.Label}
                 className="text-sm font-semibold leading-6 text-gray-900"
               >
-                {item.name}
+                {item.Label}
               </a>
             ))}
           </div>
@@ -85,11 +90,11 @@ export default function Header() {
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
                     <a
-                      key={item.name}
-                      href={item.href}
+                      key={item.Label}
+                      href={item.Label}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
-                      {item.name}
+                      {item.Label}
                     </a>
                   ))}
                 </div>
@@ -132,12 +137,10 @@ export default function Header() {
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Header Content Header Content Header 
+              {HeaderContent}
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Header Description Header Description Header Description Header
-              Description Header Description Header Description Header
-              Description
+              {HeaderDescription}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
@@ -171,3 +174,5 @@ export default function Header() {
     </div>
   );
 }
+
+export default Header;
