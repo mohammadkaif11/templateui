@@ -68,7 +68,7 @@ export default function Hero({
             </a>
             <a
               href="#"
-              className="bg-blue-400  text-white rounded-full px-4 py-2  mr-2"
+              className="bg-sky-400  text-white rounded-full px-4 py-2  mr-2"
             >
               Sign Up
             </a>
@@ -132,35 +132,38 @@ export default function Hero({
           </Dialog.Panel>
         </Dialog>
       </header>
-      <div className="relative bg-black isolate overflow-hidden pt-14">
+      <div className="relative bg-black isolate  pt-14 sm:px-3">
         <div className="w-full h-full absolute">
-          <div className="lg:w-1/5 lg:h-1/2 lg:blur-[300px] md:w-1/5  md:h-1/2 md:blur-[250px]  left-0 top-[0] absolute bg-red-500  rounded-full blur-[230px] w-1/2 h-1/2" />
-          <div className="lg:w-1/5 lg:h-1/2 lg:blur-[300px] md:w-1/5 md:h-1/2 md:blur-[250px]  right-0 top-0 absolute bg-cyan-400  rounded-full blur-[230px] w-1/2 h-1/2" />
+          <div className="lg:w-1/8 lg:h-11/12 lg:blur-[270px] md:w-1/5  md:h-1/2 md:blur-[270px]  left-0 top-[0] absolute bg-red-400  rounded-full blur-[220px] w-1/2 h-1/2" />
+          <div className="lg:w-1/8 lg:h-11/12 lg:blur-[270px] md:w-1/5 md:h-1/2 md:blur-[270px]  right-0 top-0 absolute bg-cyan-300  rounded-full blur-[220px] w-1/2 h-1/2" />
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <div className="text-center">
-            <h1 className="text-6xl font-inter font-extrabold  text-white sm:text-6xl">
+        <div className="py-32  sm:py-48 lg:py-56">
+          <div className="mx-auto text-center max-w-3xl">
+            <h1 className="text-6xl  font-inter font-meduim text-white">
               {heading.heading1}
-              <span className="text-6xl font-inter font-medium  text-white sm:text-6xl">{heading.heading2}</span>
+              <span className="text-6xl font-inter font-extrabold  text-sky-400">
+                {heading.heading2}
+              </span>
             </h1>
-            <h2 className="text-6xl font-inter font-extrabold  text-white sm:text-6xl">
-            {heading.heading3}
+            <h2 className="text-6xl   font-inter font-meduim  text-white">
+              {heading.heading3}
             </h2>
-
+          </div>
+          <div className=" mx-auto  text-center max-w-xl">
             <p className="mt-6 text-xl font-inter font-normal leading-7	   text-gray-200">
               {description}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="bg-blue-400 text-lg font-medium  text-white rounded-full px-8 py-3  mr-2"
+                className="bg-sky-400 text-lg font-medium  text-white rounded-full px-8 py-3  mr-2"
               >
                 Get Started
               </a>
 
               <a
                 href="#"
-                className="bg-gray-800 text-lg font-medium  text-blue-400 rounded-full px-8 py-3  mr-2"
+                className="bg-gray-800 text-lg font-medium  text-sky-400 rounded-full px-8 py-3  mr-2"
               >
                 Learn More
               </a>
