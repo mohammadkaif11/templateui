@@ -1,23 +1,23 @@
 import React from "react";
 
 function Cta2({
-    heading,
-    description,
-  }: {
-    heading: string;
-    description: string;
-  }) {
+  heading,
+  description,
+}: {
+  heading: string;
+  description: string;
+}) {
   return (
     <div className="bg-black w-full p-10">
       <div className="bg-black mx-auto max-w-[1740px] flex flex-col lg:flex-row">
-        <div
-          className="w-[428px] h-[600px] flex justify-center items-center"
-        >
-          <img src="./Image.png" className="-mr-[100%] w-[]" style={{position:'relative',zIndex:'1'}}/>
+        <div className="hidden  w-[428px] h-[600px]  justify-center items-center lg:flex">
+          <img
+            src="./Image.png"
+            className="-mr-[100%] w-[]"
+            style={{ position: "relative", zIndex: "1" }}
+          />
         </div>
-        <div
-          className="w-[1100px] h-[533px] relative rounded-b-3xl rounded-t-3xl overflow-hidden border-6 border-black"
-        >
+        <div className="lg:w-[1100px] lg:h-[533px] sm:w-[95%] p-6 relative rounded-b-3xl rounded-t-3xl overflow-hidden border-6 border-black">
           {" "}
           <img
             src="./dot2.png"
@@ -34,12 +34,12 @@ function Cta2({
             src="./cyanCta.png"
             className="absolute bottom-0 right-0 w-[55%]"
           />
-          <div className="max-w-xl mx-auto my-24  relative z-1">
+          <div className="max-w-xl mx-auto lg:my-24 sm:my-2 relative z-1">
             <h2 className="text-4xl font-inter font-semibold  text-white">
-                {heading}
+              {heading}
             </h2>
             <p className="mt-6 ml-2 text-lg font-inter font-normal leading-7 text-gray-300">
-             {description}
+              {description}
             </p>
             <div className="mt-10 ml-2 gap-x-6">
               <a
