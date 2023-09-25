@@ -1,1 +1,91 @@
-{"Name":""}
+{
+    "name":"Msi laptop",
+    "hero": {
+        "Navbar": [
+            {
+                "name": "Product",
+                "href": "#"
+            },
+            {
+                "name": "Features",
+                "href": "#"
+            }
+        ],
+        "heading": "Data to enrich your online business",
+        "description": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui cupidatat commodo. Elit sunt amet fugiat veniam occaecat aliqua."
+    },
+    "statistics": {
+        "heading": "Get actionable data that will help grow your business",
+        "description": "Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscingquis in viverra tristique sem. Ornare feugiat viverra eleifendfusce orci in quis amet. Sit in et vitae tortor, massa. Dapibuslaoreet amet lacus nibh integer quis. Eu vulputate diam sit tellusquis at.",
+        "statsData": [
+            {
+                "name": "8K+",
+                "description": "Autem reprehenderit aut debitis ut. Officiis harum omnis placeatae."
+            },
+            {
+                "name": "25k+",
+                "description": "Illum et aut inventore. Ut et dignissimos quasi. Omnis saepe dolorum. Hic autem fugiat."
+            },
+            {
+                "name": "98%",
+                "description": "Commodi quam quo. In quasi mollitia optio voluptate et est reiciendis. perspiciatis."
+            },
+            {
+                "name": "12M",
+                "description": "Deserunt corrupti praesentium quo vel cupiditate est occaecati ad. Aperiam libero modi similique iure."
+            }
+        ]
+    },
+    "features": {
+        "heading": "Stay on top of customer support",
+        "data": [
+            {
+                "key":1,
+                "name": "Spam report",
+                "description": "Autem reprehenderit aut debitis ut. Officiis harum omnis placeat blanditiis delectus sint vel et voluptatum. Labore asperiores non corporis molestiae."
+            },
+            {
+                "key":2,
+                "name": "Compose in markdown",
+                "description": "Illum et aut inventore. Ut et dignissimos quasi. Omnis saepe dolorum. Hic autem fugiat. Voluptatem officiis necessitatibus est."
+            },
+            {
+                "key":3,
+                "name": "Email commenting",
+                "description": "Commodi quam quo. In quasi mollitia optio voluptate et est reiciendis. Ut et sunt id officiis vitae perspiciatis. Et accusantium sapiente."
+            },
+            {
+                "key":4,
+                "name": "Customer connections",
+                "description": "Deserunt corrupti praesentium quo vel cupiditate est occaecati ad. Aperiam libero modi similique iure praesentium facilis quo cumque quibusdam."
+            }
+        ]
+    },
+    "cta": {
+        "heading": "Add your card to get 50% on paid package after launch",
+        "description": "Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputateid malesuada non. Cras aliquet purus dui laoreet diam sed lacus,fames."
+    },
+    "footer": [
+        {
+            "name": "Facebook",
+            "href": "#"
+        },
+        {
+            "name": "Instagram",
+            "href": "#"
+        },
+        {
+            "name": "Twitter",
+            "href": "#"
+        },
+        {
+            "name": "GitHub",
+            "href": "#"
+        },
+        {
+            "name": "YouTube",
+            "href": "#"
+        }
+    ],
+    "deploymentLine": ""
+}

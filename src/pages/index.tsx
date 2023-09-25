@@ -4,17 +4,17 @@ import Feature from "../../components/Feature";
 import Cta from "../../components/Cta";
 import NewsLetter from "../../components/Newsletter";
 import Footer from "../../components/Footer";
-import Cta2 from "../../components/Cta2";
+import data from '@/../data.json';
 
 export default function Home() {
   return (
     <main>
-      <Hero/>
-      <Stats/>
-      <Feature/>
-      <Cta/>
+      <Hero name={data.name} heading={data.hero.heading} description={data.hero.description} navbar={data.hero.Navbar}/>
+      <Stats heading={data.statistics.heading} description={data.statistics.description} stats={data.statistics.statsData} />
+      <Feature heading={data.features.heading} features={data.features.data}/>
+      <Cta heading={data.cta.heading} description={data.cta.description}/>
       <NewsLetter/>
-      <Footer/>
+      <Footer name={data.name} navigation={data.footer}/>
     </main>
   );
 }

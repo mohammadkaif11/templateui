@@ -5,41 +5,43 @@ import {
   TrashIcon,
 } from "@heroicons/react/24/outline";
 
-const features = [
+const icons = [
   {
+    key: 1,
     name: "Spam report",
-    description:
-      "Autem reprehenderit aut debitis ut. Officiis harum omnis placeat blanditiis delectus sint vel et voluptatum. Labore asperiores non corporis molestiae.",
     icon: TrashIcon,
   },
   {
+    key: 2,
     name: "Compose in markdown",
-    description:
-      "Illum et aut inventore. Ut et dignissimos quasi. Omnis saepe dolorum. Hic autem fugiat. Voluptatem officiis necessitatibus est.",
     icon: PencilSquareIcon,
   },
   {
+    key: 3,
     name: "Email commenting",
-    description:
-      "Commodi quam quo. In quasi mollitia optio voluptate et est reiciendis. Ut et sunt id officiis vitae perspiciatis. Et accusantium sapiente.",
     icon: ChatBubbleOvalLeftEllipsisIcon,
   },
   {
+    key: 4,
     name: "Customer connections",
-    description:
-      "Deserunt corrupti praesentium quo vel cupiditate est occaecati ad. Aperiam libero modi similique iure praesentium facilis quo cumque quibusdam.",
     icon: HeartIcon,
   },
 ];
 
-export default function Features() {
+export default function Features({
+  heading,
+  features,
+}: {
+  heading: string;
+  features: any;
+}) {
   return (
     <div className="bg-black py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <div className="relative">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Stay on top of customer support
+              {heading}{" "}
             </h2>
             <img
               src="./Image1.png"
@@ -49,14 +51,20 @@ export default function Features() {
             />
           </div>
           <dl className="col-span-2 grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2">
-            {features.map((feature) => (
+            {features.map((feature: any) => (
               <div key={feature.name}>
                 <dt className="text-base font-semibold leading-7 text-white">
                   <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-400">
-                    <feature.icon
-                      className="h-6 w-6 text-white"
-                      aria-hidden="true"
-                    />
+                    {icons.map(
+                      (data: any, index: number) =>
+                        data.name === feature.name && (
+                          <data.icon
+                            key={index}
+                            className="h-6 w-6 text-white"
+                            aria-hidden="true"
+                          />
+                        )
+                    )}
                   </div>
                   {feature.name}
                 </dt>

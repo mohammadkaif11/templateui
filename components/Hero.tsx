@@ -7,7 +7,17 @@ const navigation = [
   { name: "Features", href: "#" },
 ];
 
-export default function Hero() {
+export default function Hero({
+  name,
+  navbar,
+  heading,
+  description,
+}: {
+  name:string;
+  navbar: any;
+  heading: string;
+  description: string;
+}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -19,7 +29,7 @@ export default function Hero() {
         >
           <div className="flex lg:flex-1">
             <a href="#" className="-m-2 p-1.5 ml-8">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">{name}</span>
               <img
                 className="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
@@ -27,7 +37,7 @@ export default function Hero() {
               />
             </a>
             <div className="hidden lg:flex lg:gap-x-12 ml-10">
-              {navigation.map((item) => (
+              {navbar.map((item: any) => (
                 <a
                   key={item.name}
                   href={item.href}
@@ -56,7 +66,6 @@ export default function Hero() {
             >
               Log In
             </a>
-
             <a
               href="#"
               className="bg-blue-400  text-white rounded-full px-4 py-2  mr-2"
@@ -94,7 +103,7 @@ export default function Hero() {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/25">
                 <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
+                  {navbar.map((item: any) => (
                     <a
                       key={item.name}
                       href={item.href}
@@ -111,6 +120,12 @@ export default function Hero() {
                   >
                     Log in
                   </a>
+                  <a
+                    href="#"
+                    className="bg-blue-400  text-white rounded-full px-4 py-2  mr-2"
+                  >
+                    Sign Up
+                  </a>
                 </div>
               </div>
             </div>
@@ -119,18 +134,16 @@ export default function Hero() {
       </header>
       <div className="relative bg-black isolate overflow-hidden pt-14">
         <div className="w-full h-full absolute">
-          <div className="w-[355px] h-[415px] left-0 top-[0] absolute bg-red-500  rounded-full blur-[300px]" />
-          <div className="w-[322px] h-[443px] right-0 top-0 absolute bg-cyan-400  rounded-full blur-[300px]" />
+          <div className="lg:w-1/5 lg:h-1/2 lg:blur-[300px] md:w-1/5  md:h-1/2 md:blur-[250px]  left-0 top-[0] absolute bg-red-500  rounded-full blur-[230px] w-1/2 h-1/2" />
+          <div className="lg:w-1/5 lg:h-1/2 lg:blur-[300px] md:w-1/5 md:h-1/2 md:blur-[250px]  right-0 top-0 absolute bg-cyan-400  rounded-full blur-[230px] w-1/2 h-1/2" />
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Data to enrich your online business
+              {heading}
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
+              {description}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
