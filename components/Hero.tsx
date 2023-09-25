@@ -13,9 +13,9 @@ export default function Hero({
   heading,
   description,
 }: {
-  name:string;
+  name: string;
   navbar: any;
-  heading: string;
+  heading: any;
   description: string;
 }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -122,9 +122,9 @@ export default function Hero({
                   </a>
                   <a
                     href="#"
-                    className="bg-blue-400  text-white rounded-full px-4 py-2  mr-2"
+                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800"
                   >
-                    Sign Up
+                    Sign up
                   </a>
                 </div>
               </div>
@@ -139,23 +139,28 @@ export default function Hero({
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              {heading}
+            <h1 className="text-6xl font-inter font-extrabold  text-white sm:text-6xl">
+              {heading.heading1}
+              <span className="text-6xl font-inter font-medium  text-white sm:text-6xl">{heading.heading2}</span>
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
+            <h2 className="text-6xl font-inter font-extrabold  text-white sm:text-6xl">
+            {heading.heading3}
+            </h2>
+
+            <p className="mt-6 text-xl font-inter font-normal leading-7	   text-gray-200">
               {description}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="bg-blue-400  text-white rounded-full px-6 py-3  mr-2"
+                className="bg-blue-400 text-lg font-medium  text-white rounded-full px-8 py-3  mr-2"
               >
                 Get Started
               </a>
 
               <a
                 href="#"
-                className="bg-gray-800  text-blue-400 rounded-full px-6 py-3  mr-2"
+                className="bg-gray-800 text-lg font-medium  text-blue-400 rounded-full px-8 py-3  mr-2"
               >
                 Learn More
               </a>

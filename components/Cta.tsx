@@ -48,10 +48,10 @@ function Cta({
         <div className="w-full h-full relative px-8 py-32  shadow-2xl sm:rounded-3xl sm:px-16">
           <div className="w-[355px] h-[415px] left-0 top-[0] absolute bg-red-500  rounded-full blur-[300px]" />
           <div className="w-[322px] h-[443px] right-0 top-0 absolute bg-cyan-400  rounded-full blur-[300px]" />
-          <h2 className="text-3xl ml-2 font-bold tracking-tight text-white sm:text-4xl">
+          <h2 className="text-4xl font-inter font-semibold  text-white">
           {heading}
           </h2>
-          <p className="mt-6 ml-2 text-lg leading-8 text-gray-300">
+          <p className="mt-6 ml-2 text-lg font-inter font-normal leading-7 text-gray-300">
            {description}
           </p>
           <div className="mt-10 ml-2 gap-x-6">

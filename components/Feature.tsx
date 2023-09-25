@@ -40,7 +40,7 @@ export default function Features({
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <div className="relative">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            <h2 className="text-4xl font-inter font-semibold leading-10 text-white">
               {heading}{" "}
             </h2>
             <img
@@ -53,7 +53,7 @@ export default function Features({
           <dl className="col-span-2 grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2">
             {features.map((feature: any) => (
               <div key={feature.name}>
-                <dt className="text-base font-semibold leading-7 text-white">
+                <dt className="text-lg font-inter font-medium leading-6 text-white">
                   <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-400">
                     {icons.map(
                       (data: any, index: number) =>
@@ -68,7 +68,7 @@ export default function Features({
                   </div>
                   {feature.name}
                 </dt>
-                <dd className="mt-1 text-base leading-7 text-white">
+                <dd className="mt-1 text-base font-inter font-normal leading-6 text-gray-500">
                   {feature.description}
                 </dd>
               </div>

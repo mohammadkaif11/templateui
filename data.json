@@ -11,7 +11,11 @@
                 "href": "#"
             }
         ],
-        "heading": "Data to enrich your online business",
+        "heading": {
+            "heading1":"Building ",
+            "heading2":"made simple",
+            "heading3":"for small businesses"
+        },
         "description": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui cupidatat commodo. Elit sunt amet fugiat veniam occaecat aliqua."
     },
     "statistics": {
