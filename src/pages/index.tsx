@@ -5,6 +5,7 @@ import Cta from "../../components/Cta";
 import NewsLetter from "../../components/Newsletter";
 import Footer from "../../components/Footer";
 import data from '@/../data.json';
+import Cta2 from "../../components/Cta2";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       <Hero name={data.name} heading={data.hero.heading} description={data.hero.description} navbar={data.hero.Navbar}/>
       <Stats heading={data.statistics.heading} description={data.statistics.description} stats={data.statistics.statsData} />
       <Feature heading={data.features.heading} features={data.features.data}/>
-      <Cta heading={data.cta.heading} description={data.cta.description}/>
+      <Cta2 heading={data.cta.heading} description={data.cta.description}/>
       <NewsLetter/>
       <Footer name={data.name} navigation={data.footer}/>
     </main>

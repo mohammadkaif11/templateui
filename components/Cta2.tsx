@@ -1,0 +1,59 @@
+import React from "react";
+
+function Cta2({
+    heading,
+    description,
+  }: {
+    heading: string;
+    description: string;
+  }) {
+  return (
+    <div className="bg-black w-full p-10">
+      <div className="bg-black mx-auto max-w-[1740px] flex flex-col lg:flex-row">
+        <div
+          className="w-[428px] h-[600px] flex justify-center items-center"
+        >
+          <img src="./Image.png" className="-mr-[100%] w-[]" style={{position:'relative',zIndex:'1'}}/>
+        </div>
+        <div
+          className="w-[1100px] h-[533px] relative rounded-b-3xl rounded-t-3xl overflow-hidden border-6 border-black"
+        >
+          {" "}
+          <img
+            src="./dot2.png"
+            className="hidden absolute bottom-0 left-0 lg:block"
+            width={250}
+            height={250}
+          />
+          <img
+            src="./dot1.png"
+            className="hidden absolute top-0 right-0 lg:w-[250] lg:h-[250] lg:block"
+          />
+          <img src="./redCta.png" className="absolute top-0 left-0 w-[55%]" />
+          <img
+            src="./cyanCta.png"
+            className="absolute bottom-0 right-0 w-[55%]"
+          />
+          <div className="max-w-xl mx-auto my-24  relative z-1">
+            <h2 className="text-4xl font-inter font-semibold  text-white">
+                {heading}
+            </h2>
+            <p className="mt-6 ml-2 text-lg font-inter font-normal leading-7 text-gray-300">
+             {description}
+            </p>
+            <div className="mt-10 ml-2 gap-x-6">
+              <a
+                href="#"
+                className="bg-sky-400  text-white rounded-md px-4 py-2  mr-2"
+              >
+                Add card
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Cta2;

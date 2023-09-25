@@ -21,7 +21,7 @@ export default function Hero({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-gray-900">
+    <div className="bg-black">
       <header className="absolute inset-x-0 top-0 z-50 bg-gray-900">
         <nav
           className="flex items-center justify-between p-6 lg:px-8"
@@ -132,7 +132,7 @@ export default function Hero({
           </Dialog.Panel>
         </Dialog>
       </header>
-      <div className="relative bg-black isolate  pt-14 sm:px-3">
+      <div className="relative bg-black isolate  pt-14 sm:px-3 max-w-[1596px] mx-auto">
         <div className="w-full h-full absolute">
           <div className="lg:w-1/8 lg:h-11/12 lg:blur-[270px] md:w-1/5  md:h-1/2 md:blur-[270px]  left-0 top-[0] absolute bg-red-400  rounded-full blur-[220px] w-1/2 h-1/2" />
           <div className="lg:w-1/8 lg:h-11/12 lg:blur-[270px] md:w-1/5 md:h-1/2 md:blur-[270px]  right-0 top-0 absolute bg-cyan-300  rounded-full blur-[220px] w-1/2 h-1/2" />
