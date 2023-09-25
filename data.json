@@ -1,5 +1,5 @@
 {
-    "name":"Msi laptop",
+    "name": "Msi laptop",
     "hero": {
         "Navbar": [
             {
@@ -12,9 +12,9 @@
             }
         ],
         "heading": {
-            "heading1":"Building ",
-            "heading2":"made simple",
-            "heading3":"for small businesses"
+            "heading1": "Building ",
+            "heading2": "made simple",
+            "heading3": "for small businesses"
         },
         "description": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui cupidatat commodo. Elit sunt amet fugiat veniam occaecat aliqua."
     },
@@ -24,44 +24,44 @@
         "statsData": [
             {
                 "name": "8K+",
-                "description": "Autem reprehenderit aut debitis ut. Officiis harum omnis placeatae."
+                "description": "Companies use laoreet amet lacus nibh integer quis."
             },
             {
                 "name": "25k+",
-                "description": "Illum et aut inventore. Ut et dignissimos quasi. Omnis saepe dolorum. Hic autem fugiat."
+                "description": "Countries around the globe lacus nibh integer quis."
             },
             {
                 "name": "98%",
-                "description": "Commodi quam quo. In quasi mollitia optio voluptate et est reiciendis. perspiciatis."
+                "description": "Customer satisfaction laoreet amet lacus nibh integer quis."
             },
             {
                 "name": "12M",
-                "description": "Deserunt corrupti praesentium quo vel cupiditate est occaecati ad. Aperiam libero modi similique iure."
+                "description": "Issues resolved lacus nibh integer quis."
             }
         ]
     },
     "features": {
-        "heading": "Stay on top of customer support",
+        "heading": "A better way to send money.",
         "data": [
             {
-                "key":1,
-                "name": "Spam report",
-                "description": "Autem reprehenderit aut debitis ut. Officiis harum omnis placeat blanditiis delectus sint vel et voluptatum. Labore asperiores non corporis molestiae."
+                "key": 1,
+                "name": "Competitive rates",
+                "description": "Consequuntur omnis dicta cumque, inventore atque ab dolores aspernatur tempora ab doloremque."
             },
             {
-                "key":2,
-                "name": "Compose in markdown",
-                "description": "Illum et aut inventore. Ut et dignissimos quasi. Omnis saepe dolorum. Hic autem fugiat. Voluptatem officiis necessitatibus est."
+                "key": 2,
+                "name": "Consequuntur",
+                "description": "omnis dicta cumque, inventore atque ab dolores aspernatur tempora ab doloremque"
             },
             {
-                "key":3,
-                "name": "Email commenting",
-                "description": "Commodi quam quo. In quasi mollitia optio voluptate et est reiciendis. Ut et sunt id officiis vitae perspiciatis. Et accusantium sapiente."
+                "key": 3,
+                "name": "Instant transfers",
+                "description": "Omnis, illo delectus? Libero, possimus nulla nemo tenetur adipisci repellat dolore eligendi velit doloribus mollitia."
             },
             {
-                "key":4,
-                "name": "Customer connections",
-                "description": "Deserunt corrupti praesentium quo vel cupiditate est occaecati ad. Aperiam libero modi similique iure praesentium facilis quo cumque quibusdam."
+                "key": 4,
+                "name": "Reminder emails",
+                "description": "Veniam necessitatibus reiciendis fugit explicabo dolorem nihil et omnis assumenda odit? Quisquam unde accusantium."
             }
         ]
     },
