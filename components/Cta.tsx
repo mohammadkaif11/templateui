@@ -57,7 +57,7 @@ function Cta({
           <div className="mt-10 ml-2 gap-x-6">
             <a
               href="#"
-              className="bg-blue-400  text-white rounded-md px-4 py-2  mr-2"
+              className="bg-sky-400  text-white rounded-md px-4 py-2  mr-2"
             >
               Add card
             </a>
