@@ -133,10 +133,9 @@ export default function Hero({
         </Dialog>
       </header>
       <div className="bg-black isolate  pt-14 sm:px-3 max-w-[1596px] mx-auto">
-          <img src="./heroRed.png" className="absolute   left-0" />
-          <img src="./heroCyan.png" className="absolute  right-0" />
-     
-      
+        <img src="./heroRed.png" className="absolute   left-0" />
+        <img src="./heroCyan.png" className="absolute  right-0" />
+
         <div className="py-32  sm:py-48 lg:py-56">
           <div className="mx-auto text-center max-w-3xl">
             <h1 className="text-6xl  font-inter font-meduim text-white">
