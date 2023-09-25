@@ -54,10 +54,10 @@ export default function Features({
             {features.map((feature: any) => (
               <div key={feature.name}>
                 <dt className="text-lg font-inter font-medium leading-6 text-white">
-                  <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-400">
+                  <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-sky-400">
                     {icons.map(
                       (data: any, index: number) =>
-                        data.name === feature.name && (
+                        data.key === feature.key && (
                           <data.icon
                             key={index}
                             className="h-6 w-6 text-white"

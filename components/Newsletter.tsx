@@ -18,12 +18,12 @@ export default function NewsLetter() {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-8 lg:px-8">
         <div className="max-w-xl tracking-tight text-white lg:col-span-7">
           <h2 className="inline sm:block lg:inline xl:block font-bold text-3xl sm:text-4xl">
-            Want product news and updates?
+            Sign up for our newsletter{" "}
           </h2>{" "}
           <p className="inline sm:block lg:inline xl:block mt-2">
-            Sign up for our newsletter Anim aute id magna aliqua ad ad non
-            deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet
-            fugiat veniam occaecat fugiat..
+            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+            Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+            fugiat.
           </p>
         </div>
         <form className="w-full max-w-md lg:col-span-5 lg:pt-2">
