@@ -1,13 +1,20 @@
-export default function Cta() {
+interface CtaProps {
+ cta:{
+  Header:string;
+  Description:string;
+ }
+}
+
+const Cta: React.FC<CtaProps> = ({cta}) => {
   return (
     <div className="relative isolate overflow-hidden bg-gray-900">
       <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Call To Action Header Call To Action Header 
+            {cta?.Header} 
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-           Call To Action Description Call To Action Description Call To Action Description Call To Action Description Call To Action Description Call To Action Description Call To Action
+            {cta?.Description}
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
@@ -38,3 +45,5 @@ export default function Cta() {
     </div>
   )
 }
+
+export default Cta;
