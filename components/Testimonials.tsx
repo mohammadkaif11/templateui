@@ -12,6 +12,9 @@ export default function Testimonials({ testimonials }: { testimonials: any }) {
         <div className="mx-auto max-w-sm font-inter font-semibold text-4xl text-white text-center">
           <h1>{testimonials[index].name}</h1>
         </div>
+        <div className="mx-auto mt-4 max-w-sm font-inter font-normal text-2xl text-white text-center">
+          <h1>{testimonials[index].designation}</h1>
+        </div>
         <div className="flex justify-between">
           <div className="my-auto">
             <button
@@ -20,25 +23,32 @@ export default function Testimonials({ testimonials }: { testimonials: any }) {
               className="sm:mx-2"
             >
               <img
-                className="relative left-0 inline w-[40px]"
+                className="relative left-0 inline w-[80px]"
                 id="arrow_right"
                 alt=""
                 src="/template_4_leftArrow.svg"
               />
             </button>
           </div>
-          <div className="mx-auto max-w-lg  lg:max-w-4xl">
+          <div className="mx-auto w-[840px] h-[390px]">
             <figure className="mt-10">
-              <blockquote className="bg-gray-900 p-20  relative overflow-hidden text-center text-lg font-inter font-normal leading-8 text-white sm:text-2xl sm:leading-9 rounded-2xl">
-                <img
-                  src="./template_4_redCta.png"
-                  className="absolute top-0 left-0 w-[50%]"
-                />
-                <img
-                  src="./template_4_cyanCta.png"
-                  className="absolute bottom-0 right-0 w-[50%]"
-                />
-                <p>{testimonials[index].testimonial}.</p>
+              <blockquote className="bg-gray-900 p-24  relative overflow-hidden text-center text-lg font-inter font-normal leading-8 text-white sm:text-2xl sm:leading-9 rounded-2xl">
+                <p className="text-3xl">
+                  <span>
+                    {" "}
+                    <img
+                      src="./template_4_leftComma.png"
+                      className="lg:w-[69px]  w-[38px]  inline -mr-2"
+                    />
+                  </span>
+                  {testimonials[index].testimonial}.
+                  <span>
+                    <img
+                      src="./template_4_rightComma.png"
+                      className="lg:w-[69px]  w-[38px] inline ml-1"
+                    />
+                  </span>
+                </p>
               </blockquote>
             </figure>
           </div>
@@ -49,7 +59,7 @@ export default function Testimonials({ testimonials }: { testimonials: any }) {
               onClick={() => changeCarousel(1)}
             >
               <img
-                className="relative right-0 inline w-[40px]"
+                className="relative right-0 inline w-[80px]"
                 id="arrow_left"
                 alt=""
                 src="/template_4_rightArrow.svg"
