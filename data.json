@@ -91,5 +91,25 @@
             "href": "#"
         }
     ],
+    "testimonials": [
+        {
+          "imageURL": "/64783116669464f45602f05e-herovector-1.svg",
+          "name": "John Doe",
+          "designation": "developer",
+          "testimonial": " test site This is the best service I have ever used!"
+        },
+        {
+          "imageURL": "/64783116669464f45602f05e-herovector-1.svg",
+          "name": "Jane Doe",
+          "designation": "tester",
+          "testimonial": "I highly recommend this service!"
+        },
+        {
+          "imageURL": "/64783116669464f45602f05e-herovector-1.svg",
+          "name": "Devops",
+          "designation": "developer",
+          "testimonial": "Best product in the world!"
+        }
+      ],
     "deploymentLine": ""
 }

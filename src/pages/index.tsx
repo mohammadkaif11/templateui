@@ -6,6 +6,8 @@ import NewsLetter from "../../components/Newsletter";
 import Footer from "../../components/Footer";
 import data from '@/../data.json';
 import Cta2 from "../../components/Cta2";
+import Pricing from "../../components/Pricing";
+import Testimonials from "../../components/Testimonials";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <Stats heading={data.statistics.heading} description={data.statistics.description} stats={data.statistics.statsData} />
       <Feature heading={data.features.heading} features={data.features.data}/>
       <Cta2 heading={data.cta.heading} description={data.cta.description}/>
+      <Pricing/>
+      <Testimonials testimonials={data.testimonials}/>
       <NewsLetter/>
       <Footer name={data.name} navigation={data.footer}/>
     </main>

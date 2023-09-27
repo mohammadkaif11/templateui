@@ -46,7 +46,7 @@ export default function Features({
               {heading}{" "}
             </h2>
             <img
-              src="./Image1.png"
+              src="./image1.png"
               className="absolute hidden -bottom-20 -left-40 lg:block"
               width={300}
               height={400}
