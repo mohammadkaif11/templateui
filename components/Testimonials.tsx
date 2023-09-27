@@ -23,19 +23,19 @@ export default function Testimonials({ testimonials }: { testimonials: any }) {
                 className="relative left-0 inline w-[40px]"
                 id="arrow_right"
                 alt=""
-                src="/systemuiconsarrowleft.svg"
+                src="/template_4_leftArrow.svg"
               />
             </button>
           </div>
-          <div className="mx-auto max-w-lg  lg:max-w-34xl">
+          <div className="mx-auto max-w-lg  lg:max-w-4xl">
             <figure className="mt-10">
               <blockquote className="bg-gray-900 p-20  relative overflow-hidden text-center text-lg font-inter font-normal leading-8 text-white sm:text-2xl sm:leading-9 rounded-2xl">
                 <img
-                  src="./redCta.png"
+                  src="./template_4_redCta.png"
                   className="absolute top-0 left-0 w-[50%]"
                 />
                 <img
-                  src="./cyanCta.png"
+                  src="./template_4_cyanCta.png"
                   className="absolute bottom-0 right-0 w-[50%]"
                 />
                 <p>{testimonials[index].testimonial}.</p>
@@ -52,7 +52,7 @@ export default function Testimonials({ testimonials }: { testimonials: any }) {
                 className="relative right-0 inline w-[40px]"
                 id="arrow_left"
                 alt=""
-                src="/systemuiconsarrowleft1.svg"
+                src="/template_4_rightArrow.svg"
               />
             </button>
           </div>

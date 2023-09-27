@@ -11,7 +11,7 @@ const config: Config = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'template_2_testiminols_bgImage':"url('/testiminols.png')"
+        'template_2_testiminols_bgImage':"url('/template_4_testiminols.png')"
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],

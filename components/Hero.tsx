@@ -2,21 +2,14 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-];
+
 
 export default function Hero({
-  name,
   navbar,
-  heading,
-  description,
+  hero_section,
 }: {
-  name: string;
   navbar: any;
-  heading: any;
-  description: string;
+  hero_section: any;
 }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -29,7 +22,7 @@ export default function Hero({
         >
           <div className="flex lg:flex-1">
             <a href="#" className="-m-2 p-1.5 ml-8">
-              <span className="sr-only">{name}</span>
+              {/* <span className="sr-only">{name}</span> */}
               <img
                 className="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
@@ -37,13 +30,12 @@ export default function Hero({
               />
             </a>
             <div className="hidden lg:flex lg:gap-x-12 ml-10">
-              {navbar.map((item: any) => (
+              {navbar.navitems.map((item: any) => (
                 <a
-                  key={item.name}
-                  href={item.href}
+                  key={item.id}
                   className="text-sm font-semibold leading-6 text-white"
                 >
-                  {item.name}
+                  {item.itemName}
                 </a>
               ))}
             </div>
@@ -103,13 +95,12 @@ export default function Hero({
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/25">
                 <div className="space-y-2 py-6">
-                  {navbar.map((item: any) => (
+                  {navbar.navitems.map((item: any) => (
                     <a
-                      key={item.name}
-                      href={item.href}
+                      key={item.id}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
                     >
-                      {item.name}
+                      {item.itemName}
                     </a>
                   ))}
                 </div>
@@ -133,24 +124,23 @@ export default function Hero({
         </Dialog>
       </header>
       <div className="bg-black isolate  pt-14 sm:px-3 max-w-[1596px] mx-auto">
-        <img src="./heroRed.png" className="absolute   left-0" />
-        <img src="./heroCyan.png" className="absolute  right-0" />
+        <img src="./template_4_heroRed.png" className="absolute   left-0" />
+        <img src="./template_4_heroCyan.png" className="absolute  right-0" />
 
         <div className="py-32  sm:py-48 lg:py-56">
           <div className="mx-auto text-center max-w-3xl">
-            <h1 className="text-6xl  font-inter font-meduim text-white">
-              {heading.heading1}
-              <span className="text-6xl font-inter font-extrabold  text-sky-400">
+            <h1 className="text-6xl font-inter font-extrabold text-sky-400">
+            {hero_section.headline}
+              {/* <span className="text-6xl font-inter font-extrabold  text-sky-400">
                 {heading.heading2}
-              </span>
+              </span> */}
             </h1>
-            <h2 className="text-6xl   font-inter font-meduim  text-white">
-              {heading.heading3}
-            </h2>
+            {/* <h2 className="text-6xl   font-inter font-meduim  text-white">
+            </h2> */}
           </div>
           <div className=" mx-auto  text-center max-w-xl">
             <p className="mt-6 text-xl font-inter font-normal leading-7	   text-gray-200">
-              {description}
+              {hero_section.sub_headline}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a

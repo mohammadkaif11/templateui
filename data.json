@@ -1,115 +1,198 @@
 {
     "name": "Msi laptop",
-    "hero": {
-        "Navbar": [
+    "navbar": {
+        "navitems": [
             {
-                "name": "Product",
-                "href": "#"
+                "id": "bs8RL0C8mp",
+                "itemName": "Home"
             },
             {
-                "name": "Features",
-                "href": "#"
+                "id": "U70PLuXavg",
+                "itemName": "Company"
+            },
+            {
+                "id": "hbea4mv6pu",
+                "itemName": "Pricing"
+            },
+            {
+                "id": "iKu1vghb0h",
+                "itemName": "Contact"
             }
         ],
-        "heading": {
-            "heading1": "Building ",
-            "heading2": "made simple",
-            "heading3": "for small businesses"
-        },
-        "description": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui cupidatat commodo. Elit sunt amet fugiat veniam occaecat aliqua."
+        "lightLogo": "/template1_logo.png",
+        "darkLogo": "/template1_dark_logo.png"
     },
-    "statistics": {
-        "heading": "Get actionable data that will help grow your business",
-        "description": "Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscingquis in viverra tristique sem. Ornare feugiat viverra eleifendfusce orci in quis amet. Sit in et vitae tortor, massa. Dapibuslaoreet amet lacus nibh integer quis. Eu vulputate diam sit tellusquis at.",
-        "statsData": [
+    "hero_section": {
+        "headline": "Building made simple for small businesses",
+        "sub_headline": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua. ",
+        "hero_cta": false
+    },
+    "matrix_section": {
+        "title": "Get actionable data that will help grow your business",
+        "desc": "Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscingquis in viverra tristique sem. Ornare feugiat viverra eleifendfusce orci in quis amet. Sit in et vitae tortor, massa. Dapibuslaoreet amet lacus nibh integer quis. Eu vulputate diam sit tellusquis at.",
+        "matrix": [
             {
-                "name": "8K+",
-                "description": "Companies use laoreet amet lacus nibh integer quis."
+                "id": "RrEoHXEL6R",
+                "value": "8K+",
+                "desc": "Companies use laoreet amet lacus nibh integer quis."
             },
             {
-                "name": "25k+",
-                "description": "Countries around the globe lacus nibh integer quis."
+                "id": "RrEoHXEL6S",
+                "value": "25k+",
+                "desc": "Countries around the globe lacus nibh integer quis."
             },
             {
+                "id": "RrEoHXEL6T",
                 "name": "98%",
-                "description": "Customer satisfaction laoreet amet lacus nibh integer quis."
+                "desc": "Customer satisfaction laoreet amet lacus nibh integer quis."
             },
             {
-                "name": "12M",
-                "description": "Issues resolved lacus nibh integer quis."
+                "id": "RrEoHXEL6U",
+                "value": "12M",
+                "desc": "Issues resolved lacus nibh integer quis."
             }
         ]
     },
-    "features": {
-        "heading": "A better way to send money.",
-        "data": [
+    "feature": {
+        "title": "A better way to send money.",
+        "features": [
             {
-                "key": 1,
-                "name": "Competitive rates",
-                "description": "Consequuntur omnis dicta cumque, inventore atque ab dolores aspernatur tempora ab doloremque."
+                "id": "RrEoHXEL6P",
+                "title": "Competitive rates",
+                "desc": "Consequuntur omnis dicta cumque, inventore atque ab dolores aspernatur tempora ab doloremque."
             },
             {
-                "key": 2,
-                "name": "Consequuntur",
-                "description": "omnis dicta cumque, inventore atque ab dolores aspernatur tempora ab doloremque"
+                "id": "RrEoHXEL6Q",
+                "title": "Consequuntur",
+                "desc": "omnis dicta cumque, inventore atque ab dolores aspernatur tempora ab doloremque"
             },
             {
-                "key": 3,
-                "name": "Instant transfers",
-                "description": "Omnis, illo delectus? Libero, possimus nulla nemo tenetur adipisci repellat dolore eligendi velit doloribus mollitia."
+                "id": "RrEoHXEL6R",
+                "title": "Instant transfers",
+                "desc": "Omnis, illo delectus? Libero, possimus nulla nemo tenetur adipisci repellat dolore eligendi velit doloribus mollitia."
             },
             {
-                "key": 4,
-                "name": "Reminder emails",
-                "description": "Veniam necessitatibus reiciendis fugit explicabo dolorem nihil et omnis assumenda odit? Quisquam unde accusantium."
+                "id": "RrEoHXEL6S",
+                "title": "Reminder emails",
+                "desc": "Veniam necessitatibus reiciendis fugit explicabo dolorem nihil et omnis assumenda odit? Quisquam unde accusantium."
             }
         ]
     },
-    "cta": {
-        "heading": "Add your card to get 50% on paid package after launch",
-        "description": "Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputateid malesuada non. Cras aliquet purus dui laoreet diam sed lacus,fames."
+    "waitlist": {
+        "title": "Add your card to get 50% on paid package after launch",
+        "subtitle": "Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputateid malesuada non. Cras aliquet purus dui laoreet diam sed lacus,fames."
     },
-    "footer": [
-        {
-            "name": "Facebook",
-            "href": "#"
-        },
-        {
-            "name": "Instagram",
-            "href": "#"
-        },
-        {
-            "name": "Twitter",
-            "href": "#"
-        },
-        {
-            "name": "GitHub",
-            "href": "#"
-        },
-        {
-            "name": "YouTube",
-            "href": "#"
-        }
-    ],
+    "choose_plan": {
+        "title": "Pricing plans for teams of all sizes",
+        "subtitle": "Distinctio et nulla eum soluta et neque labore quibusdam. Saepe etquasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.",
+        "pricing": [
+            {
+                "id": "fImKiQOPJn18PJEaf89xt36hQktavqsE",
+                "level": "basic",
+                "price": 25.0,
+                "description": " test site Add photos & a welcome message. Create any kind of gift you can imagine.",
+                "features": [
+                    {
+                        "id": "ddbwdqdq",
+                        "feature": "Organize your travel plans"
+                    },
+                    {
+                        "id": "2ue2hen",
+                        "feature": "Tallies and displays travel stats"
+                    },
+                    {
+                        "id": "1w2e324ef",
+                        "feature": "Find places near a hotel"
+                    }
+                ]
+            },
+            {
+                "id": "dJbPgFZpOdqnaBvtn7JRAE9eiVcINX7V",
+                "level": "premium",
+                "price": 50.0,
+                "description": "Add photos & a welcome message. Create any kind of gift you can imagine.",
+                "features": [
+                    {
+                        "id": "2ecdef4d",
+                        "feature": "Organize your travel plans"
+                    },
+                    {
+                        "id": "frg42daw",
+                        "feature": "Tallies and displays travel stats"
+                    },
+                    {
+                        "id": "chuwfhwhf",
+                        "feature": "Find places near a hotel"
+                    }
+                ]
+            },
+            {
+                "id": "5635GTT3ioj4VFnKjQCfEiFi1FbbkpsJ",
+                "level": "ultimate",
+                "price": 75.0,
+                "description": "Add photos & a welcome message. Create any kind of gift you can imagine.",
+                "features": [
+                    {
+                        "id": "29e838rhf",
+                        "feature": "Organize your travel plans"
+                    },
+                    {
+                        "id": "q3udwecnwe",
+                        "feature": "Tallies and displays travel stats"
+                    },
+                    {
+                        "id": "ladjhdd23",
+                        "feature": "Find places near a hotel"
+                    }
+                ]
+            }
+        ]
+    },
     "testimonials": [
         {
-          "imageURL": "/64783116669464f45602f05e-herovector-1.svg",
-          "name": "John Doe",
-          "designation": "developer",
-          "testimonial": " test site This is the best service I have ever used!"
+            "imageURL": "/64783116669464f45602f05e-herovector-1.svg",
+            "name": "John Doe",
+            "designation": "developer",
+            "testimonial": " test site This is the best service I have ever used!"
         },
         {
-          "imageURL": "/64783116669464f45602f05e-herovector-1.svg",
-          "name": "Jane Doe",
-          "designation": "tester",
-          "testimonial": "I highly recommend this service!"
+            "imageURL": "/64783116669464f45602f05e-herovector-1.svg",
+            "name": "Jane Doe",
+            "designation": "tester",
+            "testimonial": "I highly recommend this service!"
         },
         {
-          "imageURL": "/64783116669464f45602f05e-herovector-1.svg",
-          "name": "Devops",
-          "designation": "developer",
-          "testimonial": "Best product in the world!"
+            "imageURL": "/64783116669464f45602f05e-herovector-1.svg",
+            "name": "Devops",
+            "designation": "developer",
+            "testimonial": "Best product in the world!"
         }
-      ],
-    "deploymentLine": ""
+    ],
+    "footer": {
+        "socials": [
+            {
+                "id": "2F433343E98sdf",
+                "platform": "instagram",
+                "link": "#"
+            },
+            {
+                "id": "2F433343E9sdfs",
+                "platform": "facebook",
+                "link": "#"
+            },
+            {
+                "id": "2F433343E9vdsg",
+                "platform": "twitter",
+                "link": "#"
+            },
+            {
+                "id": "2F433343sdvsd",
+                "platform": "linkedin",
+                "link": "#"
+            }
+        ]
+    },
+    "deployment": {
+        "domain": "example.ftest.ai"
+    }
 }

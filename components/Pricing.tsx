@@ -79,7 +79,8 @@ const tiers: Tier[] = [
   },
 ];
 
-export default function Pricing() {
+export default function Pricing({ plan }: { plan: any }) {
+  console.log(plan);
   const [frequency, setFrequency] = useState(frequencies[0]);
 
   return (
@@ -87,14 +88,13 @@ export default function Pricing() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="max-w-4xl text-white">
           <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            Pricing plans for teams of all sizes
+            {plan.title}
           </p>
         </div>
         <p className="mt-6 max-w-2xl text-lg leading-8 text-white">
-          Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et
-          quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.
+          {plan.subtitle}
         </p>
-        <div className="mt-16 flex justify-center">
+        {/* <div className="mt-16 flex justify-center">
           <RadioGroup
             value={frequency}
             onChange={setFrequency}
@@ -118,55 +118,60 @@ export default function Pricing() {
               </RadioGroup.Option>
             ))}
           </RadioGroup>
-        </div>
+        </div> */}
         <div className="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {tiers.map((tier) => (
+          {plan.pricing.map((prici: any) => (
             <div
-              key={tier.id}
+              key={prici.id}
               className="bg-gray-900 ring-gray-900 rounded-3xl p-8 ring-1 xl:p-10"
             >
               <h3
-                id={tier.id}
+                id={prici.id}
                 className="text-white text-lg font-semibold leading-8"
               >
-                {tier.name}
+                {prici.level}
               </h3>
-              <p className="text-white mt-4 text-sm leading-6">
-                {tier.description}
-              </p>
+
               <p className="mt-6 flex items-baseline gap-x-1">
                 <span className="text-white text-4xl font-bold tracking-tight">
-                  {typeof tier.price === "string"
+                  ${prici.price}
+                  {/* {typeof tier.price === "string"
                     ? tier.price
-                    : tier.price[frequency.value]}
+                    : tier.price[frequency.value]} */}
                 </span>
-                {typeof tier.price !== "string" ? (
+                <span className="text-white text-lg font-semibold leading-6">
+                  /Month
+                </span>
+
+                {/* {typeof tier.price !== "string" ? (
                   <span className="text-white text-sm font-semibold leading-6">
                     {frequency.priceSuffix}
                   </span>
-                ) : null}
+                ) : null} */}
+              </p>
+              <p className="text-white mt-4 text-sm leading-6">
+                {prici.description}
               </p>
 
               <ul
                 role="list"
                 className="text-white mt-8 space-y-3 text-sm leading-6 xl:mt-10"
               >
-                {tier.features.map((feature) => (
-                  <li key={feature} className="flex gap-x-3">
+                {prici.features.map((feature: any) => (
+                  <li key={feature.id} className="flex gap-x-3">
                     <CheckIcon
                       className="h-6 w-5 flex-none text-indigo-500"
                       aria-hidden="true"
                     />
-                    {feature}
+                    {feature.feature}
                   </li>
                 ))}
               </ul>
               <a
-                href={tier.href}
-                aria-describedby={tier.id}
+                aria-describedby={prici.id}
                 className=" bg-sky-400 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
               >
-                {tier.cta}
+                Get Started
               </a>
             </div>
           ))}

@@ -1,13 +1,9 @@
 import React from "react";
 
 function Stats({
-  heading,
-  description,
-  stats,
+  statistics,
 }: {
-  heading: string;
-  description: string;
-  stats: any;
+  statistics: any;
 }) {
   return (
     <div className="bg-black w-full">
@@ -17,19 +13,19 @@ function Stats({
             Valuable metrics
           </span>
           <h1 className="my-6 text-4xl font-inter font-semibold  text-white">
-            {heading}
+            {statistics.title}
           </h1>
           <p className="my-6 text-lg font-inter font-normal leading-7 text-white ">
-            {description}
+            {statistics.desc}
           </p>
           <dl className="col-span-2 grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2">
-            {stats.map((stat: any) => (
-              <div key={stat.name}>
+            {statistics.matrix.map((stat: any) => (
+              <div key={stat.id}>
                 <dt className="text-2xl font-inter font-bold leading-8 text-white">
-                  {stat.name}
+                  {stat.value}
                 </dt>
                 <dd className="mt-1 text-base font-inter font-medium leading-6 text-white">
-                  {stat.description}
+                  {stat.desc}
                 </dd>
               </div>
             ))}
@@ -37,7 +33,7 @@ function Stats({
         </div>
         <div className="lg:w-1/2 md:w-full mx-1 mt-4 max-h-[690px]">
           <img
-            src="./Imagewithgradient.png"
+            src="./template_4_statstical.png"
             alt="Feature"
             className="w-full h-full object-cover"
           />
