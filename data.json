@@ -1,5 +1,4 @@
 {
-    "name": "Msi laptop",
     "navbar": {
         "navitems": [
             {
@@ -78,10 +77,26 @@
             }
         ]
     },
-    "waitlist": {
-        "title": "Add your card to get 50% on paid package after launch",
-        "subtitle": "Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputateid malesuada non. Cras aliquet purus dui laoreet diam sed lacus,fames."
-    },
+    "howItWorks": [
+        {
+            "id": "RrEoHXEL6Q",
+            "title": "loom & Create Gifts",
+            "desc": " test site Add photos & a welcome message. Create any kind of gift you can imagine.",
+            "link": "#"
+        },
+        {
+            "id": "O4A2BkaIYQ",
+            "title": "loom & Share with Guests",
+            "desc": "Add photos & a welcome message. Create any kind of gift you can imagine.",
+            "link": "#"
+        },
+        {
+            "id": "3vip44C89as1cQOm4cOoCI7pTl16HA8L",
+            "title": "loom and the Contributions",
+            "desc": "Add photos & a welcome message. Create any kind of gift you can imagine.",
+            "link": "#"
+        }
+    ],
     "choose_plan": {
         "title": "Pricing plans for teams of all sizes",
         "subtitle": "Distinctio et nulla eum soluta et neque labore quibusdam. Saepe etquasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.",
@@ -168,6 +183,10 @@
             "testimonial": "Best product in the world!"
         }
     ],
+    "waitlist": {
+        "title": "Add your card to get 50% on paid package after launch",
+        "subtitle": "Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputateid malesuada non. Cras aliquet purus dui laoreet diam sed lacus,fames."
+    },
     "footer": {
         "socials": [
             {
